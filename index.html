@@ -9,47 +9,14 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <style>
-      .search-input {
-        border: 2px solid #0d6efd;
-        border-radius: 8px;
-      }
-
-      .search-input:focus {
-        border-color: #0d6efd;
-        box-shadow: none;
-      }
-
-      .btn-custom {
-        border: 2px solid #0d6efd;
-        color: #0d6efd;
-        border-radius: 8px;
-        transition: 0.3s;
-      }
-
-      .btn-custom:hover {
-        background-color: #e5faff;
-        border-color: #0d6efd;
-        color: #0d6efd;
-      }
-
-      .card-product {
-        transition: 0.3s;
-      }
-
-      .card-text {
-        font-size: 14px;
-        color: gray;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" style="color: #0d6efd;" href="#">Buku Kita</a>
+        <a class="navbar-brand" style="color: #0d6efd" href="#">Buku Kita</a>
 
         <ul class="nav">
           <li class="nav-item">
@@ -66,7 +33,9 @@
               Kategori
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Buku</a></li>
+              <li>
+                <a class="dropdown-item" href="Kategori/buku.html">Buku</a>
+              </li>
               <li><a class="dropdown-item" href="#">Ebook</a></li>
             </ul>
           </li>
@@ -100,78 +69,94 @@
         <!-- card   -->
         <!-- Card 1 -->
         <div class="col-md-4 col-lg-2">
-          <div class="card card-product h-100">
-            <img src="Buku/janji-tereliye.jpg" class="card-img-top" />
-            <div class="card-body">
+          <div class="card card-product h-100 d-flex flex-column">
+            <img src="Rekom-Buku/janji-tereliye.jpg" class="card-img-top" />
+            <div class="card-body d-flex flex-column">
               <h6 class="card-title">Janji - Tere Liye</h6>
               <p class="card-text">Rp. 121.000.00</p>
-              <a href="#" class="btn btn-custom btn-sm">Detail</a>
+              <a href="#" class="btn btn-custom btn-sm mt-auto">Detail</a>
             </div>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div class="col-md-4 col-lg-2">
-          <div class="card card-product h-100">
-            <img src="Buku/janji-tereliye.jpg" class="card-img-top" />
-            <div class="card-body">
-              <h6 class="card-title">Janji - Tere Liye</h6>
+          <div class="card card-product h-100 d-flex flex-column">
+            <img
+              src="Rekom-Buku/tentang kamu-tereliye.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Tentang Kamu - Tere Liye</h6>
               <p class="card-text">Rp. 121.000.00</p>
-              <a href="#" class="btn btn-custom btn-sm">Detail</a>
+              <a href="#" class="btn btn-custom btn-sm mt-auto">Detail</a>
             </div>
           </div>
         </div>
 
         <!-- Card 3 -->
         <div class="col-md-4 col-lg-2">
-          <div class="card card-product h-100">
-            <img src="Buku/janji-tereliye.jpg" class="card-img-top" />
-            <div class="card-body">
-              <h6 class="card-title">Janji - Tere Liye</h6>
+          <div class="card card-product h-100 d-flex flex-column">
+            <img src="Rekom-Buku/hujan-tereliye.jpg" class="card-img-top" />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Hujan - Tere Liye</h6>
               <p class="card-text">Rp. 121.000.00</p>
-              <a href="#" class="btn btn-custom btn-sm">Detail</a>
+              <a href="#" class="btn btn-custom btn-sm mt-auto">Detail</a>
             </div>
           </div>
         </div>
 
         <!-- Card 4 -->
         <div class="col-md-4 col-lg-2">
-          <div class="card card-product h-100">
-            <img src="Buku/janji-tereliye.jpg" class="card-img-top" />
-            <div class="card-body">
-              <h6 class="card-title">Janji - Tere Liye</h6>
+          <div class="card card-product h-100 d-flex flex-column">
+            <img
+              src="Rekom-Buku/seporsimieayam-brian.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Seporsi Mie Ayam Sebelum Mati</h6>
               <p class="card-text">Rp. 121.000.00</p>
-              <a href="#" class="btn btn-custom btn-sm">Detail</a>
+              <a href="#" class="btn btn-custom btn-sm mt-auto">Detail</a>
             </div>
           </div>
         </div>
 
         <!-- Card 5 -->
         <div class="col-md-4 col-lg-2">
-          <div class="card card-product h-100">
-            <img src="Buku/janji-tereliye.jpg" class="card-img-top" />
-            <div class="card-body">
-              <h6 class="card-title">Janji - Tere Liye</h6>
+          <div class="card card-product h-100 d-flex flex-column">
+            <img
+              src="Rekom-Buku/kauakudansepucuk-tereliye.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Kau Aku dan sepucuk angpao merah</h6>
               <p class="card-text">Rp. 121.000.00</p>
-              <a href="#" class="btn btn-custom btn-sm">Detail</a>
+              <a href="#" class="btn btn-custom btn-sm mt-auto">Detail</a>
             </div>
           </div>
         </div>
 
         <!-- Card 6 -->
         <div class="col-md-4 col-lg-2">
-          <div class="card card-product h-100">
-            <img src="Buku/janji-tereliye.jpg" class="card-img-top" />
-            <div class="card-body">
-              <h6 class="card-title">Janji - Tere Liye</h6>
+          <div class="card card-product h-100 d-flex flex-column">
+            <img src="Rekom-Buku/bumi manusia-pram.png" class="card-img-top" />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Bumi manusia</h6>
               <p class="card-text">Rp. 121.000.00</p>
-              <a href="#" class="btn btn-custom btn-sm">Detail</a>
+              <a href="Detail-buku/bumi-manusia.html" class="btn btn-custom btn-sm mt-auto">Detail</a>
             </div>
           </div>
         </div>
         <!-- Card End -->
       </div>
     </div>
+
+    <footer class="bg-light shadow-sm text-center py-3 mt-5">
+      <div class="container">
+        <p class="mb-1">© 2026 Buku kita. All Rights Reserved.</p>
+        <small>Made by Fadli Habibi</small>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
