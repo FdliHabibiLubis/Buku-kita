@@ -49,16 +49,16 @@
     </nav>
 
     <!-- Judul -->
-    <div class="container mt-4">
-      <h4 class="text-secondary">Ebook Terlaris</h4>
+    <div class="container mt-4 p-1">
+      <h4 style="color: #0d6efd; font-weight: 450">Ebook Terlaris</h4>
     </div>
 
     <!-- Produk -->
     <div class="container mt-3 position-relative ebook-scroll">
       <!-- Tombol Kiri -->
-      <button class="scroll-btn left" onclick="scrollToLeft()">❮</button>
+      <button class="scroll-btn left" onclick="scrollKiri('scrollContainer1')">❮</button>
 
-      <div class="row g-3 flex-nowrap overflow-auto" id="scrollContainer">
+      <div class="row g-3 flex-nowrap overflow-auto scroll-container" id="scrollContainer1">
         <!-- CARD (contoh, sisanya sama saja) -->
         <div class="col-md-4 col-lg-2">
           <div class="card card-product h-100 d-flex flex-column">
@@ -146,8 +146,108 @@
       </div>
 
       <!-- Tombol Kanan -->
-      <button class="scroll-btn right" onclick="scrollToRight()">❯</button>
+      <button class="scroll-btn right" onclick="scrollKanan('scrollContainer1')">❯</button>
     </div>
+
+    <div class="container mt-4 p-1">
+      <h4 style="color: #0d6efd; font-weight: 450">Sangat rekomedasi</h4>
+    </div>
+
+    <!-- Produk -->
+    <div class="container mt-3 position-relative ebook-scroll">
+      <!-- Tombol Kiri -->
+      <button class="scroll-btn left" onclick="scrollKiri('scrollContainer2')">❮</button>
+
+      <div class="row g-3 flex-nowrap overflow-auto scroll-container" id="scrollContainer2">
+        <!-- CARD (contoh, sisanya sama saja) -->
+        <div class="col-md-4 col-lg-2">
+          <div class="card card-product h-100 d-flex flex-column">
+            <img
+              src="../assets/images/Rekom-Buku/janji-tereliye.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Janji - Tere Liye</h6>
+              <p class="card-text mt-auto">Rp. 121.000.00</p>
+              <a href="#" class="btn btn-custom btn-sm mt-2">Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2">
+          <div class="card card-product h-100 d-flex flex-column">
+            <img
+              src="../assets/images/Rekom-Buku/tentang kamu-tereliye.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Tentang Kamu - Tere Liye</h6>
+              <p class="card-text mt-auto">Rp. 121.000.00</p>
+              <a href="#" class="btn btn-custom btn-sm mt-2">Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2">
+          <div class="card card-product h-100 d-flex flex-column">
+            <img
+              src="../assets/images/Rekom-Buku/hujan-tereliye.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Hujan - Tere Liye</h6>
+              <p class="card-text mt-auto">Rp. 121.000.00</p>
+              <a href="#" class="btn btn-custom btn-sm mt-2">Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2">
+          <div class="card card-product h-100 d-flex flex-column">
+            <img
+              src="../assets/images/Rekom-Buku/seporsimieayam-brian.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Seporsi Mie Ayam Sebelum Mati</h6>
+              <p class="card-text mt-auto">Rp. 121.000.00</p>
+              <a href="#" class="btn btn-custom btn-sm mt-2">Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2">
+          <div class="card card-product h-100 d-flex flex-column">
+            <img
+              src="../assets/images/Rekom-Buku/kauakudansepucuk-tereliye.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Kau Aku dan sepucuk angpao merah</h6>
+              <p class="card-text mt-auto">Rp. 121.000.00</p>
+              <a href="#" class="btn btn-custom btn-sm mt-2">Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-2">
+          <div class="card card-product h-100 d-flex flex-column">
+            <img
+              src="../assets/images/Rekom-Buku/bumi manusia-pram.png"
+              class="card-img-top"
+            />
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title">Bumi Manusia</h6>
+              <p class="card-text mt-auto">Rp. 121.000.00</p>
+              <a href="#" class="btn btn-custom btn-sm mt-2">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Kanan -->
+      <button class="scroll-btn right" onclick="scrollKanan('scrollContainer2')">❯</button>
+    </div> 
 
     <!-- Footer -->
     <footer class="bg-light shadow-sm text-center py-3 mt-5">

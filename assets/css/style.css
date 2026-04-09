@@ -82,11 +82,10 @@ body {
   background-color: #0d6efd;
   color: #ffffff;
 }
-#scrollContainer {
+.scroll-container {
   scroll-behavior: smooth;
 }
 
-/* sembunyikan scrollbar (optional) */
-#scrollContainer::-webkit-scrollbar {
+.scroll-container::-webkit-scrollbar {
   display: none;
 }

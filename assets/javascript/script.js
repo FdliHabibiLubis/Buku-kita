@@ -1,19 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const container = document.getElementById("scrollContainer");
-
-  if (!container) return;
-
-  window.scrollToLeft = function () {
-    container.scrollBy({
-      left: -300,
-      behavior: "smooth",
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  window.scrollKiri = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollBy({ left: -300, behavior: "smooth" });
   };
 
-  window.scrollToRight = function () {
-    container.scrollBy({
-      left: 300,
-      behavior: "smooth",
-    });
+  window.scrollKanan = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollBy({ left: 300, behavior: "smooth" });
   };
 });
