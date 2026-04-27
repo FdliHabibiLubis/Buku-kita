@@ -2,6 +2,22 @@ body {
   padding-top: 60px;
 }
 
+.login-body {
+  background-image: url(../images/Background/Desain\ tanpa\ judul\ \(1\).jpg);
+}
+
+.form-login {
+  width: 300px; 
+  border: 2px solid #0d6efd;
+  border-radius: 12px;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -53,7 +69,6 @@ body {
   color: grey;
 }
 
-
 .scroll-btn {
   position: absolute;
   top: 40%;
@@ -64,7 +79,7 @@ body {
   font-size: 18px;
   padding: 10px 14px;
   border-radius: 8px; /* kotak, bukan bulat */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   z-index: 10;
   transition: 0.3s;
