@@ -23,6 +23,7 @@
         <div class="mb-2">
           <label class="form-label">Username</label>
           <input
+            id="email"
             type="text"
             class="form-control"
             placeholder="Masukkan username"
@@ -32,22 +33,26 @@
         <div class="mb-2">
           <label class="form-label">Password</label>
           <input
+            id="password"
             type="password"
             class="form-control"
             placeholder="Masukkan password"
           />
         </div>
 
-        <button class="btn btn-primary w-100 mb-2" href="dashboard.html">
+        <button onclick="handleLogin()" class="btn btn-primary w-100 mb-2">
           Login
         </button>
         <p class="d-flex gap-1 justify-content-end">
           <a class="text-decoration-none" href="create-akun.html">Daftar?</a>
-          <a class="text-decoration-none" href="forgot-pass.html">Lupa Password</a>
+          <a class="text-decoration-none" href="forgot-pass.html"
+            >Lupa Password</a
+          >
         </p>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
   </body>
 </html>
