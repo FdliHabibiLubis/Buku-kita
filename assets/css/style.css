@@ -3,11 +3,16 @@ body {
 }
 
 .login-body {
-  background-image: url(../images/Background/Desain\ tanpa\ judul\ \(1\).jpg);
+  background-image: url(../images/Background/bg.png);
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: fixed;
 }
 
 .form-login {
-  width: 330px; 
+  width: 330px;
   border: 2px solid #0d6efd;
   border-radius: 12px;
   background-color: white;
