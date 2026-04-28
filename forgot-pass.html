@@ -18,18 +18,19 @@
       class="container vh-100 d-flex justify-content-center align-items-center"
     >
       <div class="form-login p-4">
-        <h2 class="text-center mb-3" style="color: #0d6efd">Login</h2>
+        <h2 class="text-center mb-2" style="color: #0d6efd">Lupa password</h2>
 
-        <div class="mb-3">
+        <div class="mb-2">
           <label class="form-label">Username</label>
           <input
             type="text"
             class="form-control"
-            placeholder="Masukkan username"
+            placeholder="Masukkan username/Email"
           />
         </div>
+        <button class="btn btn-success w-100">Kirim OTP</button>
 
-        <div class="mb-3">
+        <div class="mb-2">
           <label class="form-label">Password</label>
           <input
             type="password"
@@ -38,8 +39,17 @@
           />
         </div>
 
-        <button class="btn btn-primary w-100" href="dashboard.html">Login</button>
-          <p><a href="">Lupa Password</a></p>
+        <div class="mb-2">
+          <label class="form-label">Konfirmasi Password</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Masukkan password"
+          />
+        </div>
+
+        <button class="btn btn-primary w-100 mb-2">Reset Password</button>
+        <p class="d-flex justify-content-end"><a class="text-decoration-none" href="index.html">Login</a></p>
       </div>
     </div>
 
