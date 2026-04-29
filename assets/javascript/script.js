@@ -5,24 +5,24 @@ function register(name, email, password, confirmPassword) {
 
   // Memvalidasi jika kosong
   if (!name || !email || !password || !confirmPassword) {
-    console.log("Harap isi bagian kosong");
+    output.textContent = "Harap isi bagian kosong";
     return;
   }
 
   // Memvalidasi password
   if (password.length < 8) {
-    console.log("Password minimal 8 karrakter");
+    output.textContent = "Minimal 8 karakter";
     return;
   }
   if (password !== confirmPassword) {
-    console.log("Password tidak sama");
+    output.textContent = "Password tidak sama";
     return;
   }
 
   //  cek email
   let exists = users.find((u) => u.email === email);
   if (exists) {
-    console.log("Email sudah terdaftar");
+    output.textContent = "Email sudah terdaftar";
     return;
   }
 
@@ -36,6 +36,8 @@ function register(name, email, password, confirmPassword) {
   localStorage.setItem("users", JSON.stringify(users));
 
   console.log("Register berhasil");
+
+  window.location.href = "index.html";
 }
 
 function handleRegister() {
@@ -52,22 +54,22 @@ function handleRegister() {
 function login(email, password) {
   let users = JSON.parse(localStorage.getItem("users")) || [];
 
-  // Memvalidasi jika isi kosonga
+  // Memvalidasi jika isi kosong
   if (!email || !password) {
-    console.log("Harap isi bagian kosong");
+    output.textContent = "Harap isi bagian kosong";
     return;
   }
   // Mencari akun user
   let user = users.find((u) => u.email === email);
 
   if (!user) {
-    alert("Email tidak ditemukan");
+    output.textContent = "Email tidak ditemukan";
     return;
   }
 
   // Mengecek password
   if (user.password !== password) {
-    alert("Password salah");
+    output.textContent = "Password Salah";
     return;
   }
 
