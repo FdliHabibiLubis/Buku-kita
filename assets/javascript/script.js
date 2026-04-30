@@ -53,13 +53,13 @@ function handleRegister() {
 
 function login(email, password) {
   let users = JSON.parse(localStorage.getItem("users")) || [];
+  let output = document.getElementById("output");
 
-  // Memvalidasi jika isi kosong
   if (!email || !password) {
     output.textContent = "Harap isi bagian kosong";
     return;
   }
-  // Mencari akun user
+
   let user = users.find((u) => u.email === email);
 
   if (!user) {
@@ -67,20 +67,30 @@ function login(email, password) {
     return;
   }
 
-  // Mengecek password
   if (user.password !== password) {
-    output.textContent = "Password Salah";
+    output.textContent = "Password salah";
     return;
   }
 
   alert("Login berhasil");
 
-  // Menyimpan status login
-  localStorage.setItem("Login user", email);
+  // SIMPAN USER LOGIN
+  localStorage.setItem("currentUser", JSON.stringify(user));
 
-  // masuk ke dashboard
+  // PINDAH HALAMAN
   window.location.href = "dashboard.html";
 }
+
+// Menampilkan nama user ke dashboard
+document.addEventListener("DOMContentLoaded", function () {
+  let user = JSON.parse(localStorage.getItem("currentUser"));
+
+  if (user) {
+    document.getElementById("username").textContent ="Selamat datang " + user.nama;
+  } else {
+    window.Location.href = "index.html";
+  }
+});
 
 function handleLogin() {
   let email = document.getElementById("email").value;

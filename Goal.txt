@@ -7,6 +7,7 @@ Sort by (Terbaru, Harga, Populer)
 3. bisa merating buku dan menambahkan buku ke kategori favorit
 
 4. menambahkan section karena hanya masih ada rekomendasi saja
+    - Top buku terbaik
     - Buku Terbaru
     - buku pilihan
 
