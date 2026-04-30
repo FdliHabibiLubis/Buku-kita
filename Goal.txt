@@ -1,0 +1,13 @@
+1. Memfilter buku
+Filter by kategori (Fiksi, Non-fiksi, dll.)
+Sort by (Terbaru, Harga, Populer)
+
+2. Menamipilkan nama user saat login di navbar
+
+3. bisa merating buku dan menambahkan buku ke kategori favorit
+
+4. menambahkan section karena hanya masih ada rekomendasi saja
+    - Buku Terbaru
+    - buku pilihan
+
+5. saya ingin menambahkan fitur crud tapi hanya admin yang bisa menambahkan item nya
