@@ -2,6 +2,7 @@ body {
   padding-top: 60px;
 }
 
+
 .login-body {
   background-image: url(../images/Background/bg.png);
   background-size: cover;
@@ -115,6 +116,11 @@ body {
 .main-content {
   margin-left: 220px;
   padding: 20px;
+}
+
+
+.container-kontak {
+  height: 350px;
 }
 
 .scroll-btn {

@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let user = JSON.parse(localStorage.getItem("currentUser"));
 
   if (user) {
-    document.getElementById("username").textContent ="Selamat datang " + user.nama;
+    document.getElementById("username").textContent = user.nama;
   } else {
     window.Location.href = "index.html";
   }
