@@ -18,19 +18,30 @@
       <div class="container">
         <a id="username" class="navbar-brand" style="color: #0d6efd"></a>
 
-        <ul class="nav">
+        <ul class="nav mt-3">
           <li class="nav-item">
             <a class="nav-link active" href="dashboard.html">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Promo</a>
+            <a class="nav-link" href="#promo">Promo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Hubungi kami</a>
+            <a class="nav-link" href="#kontak">Hubungi kami</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html">Keluar</a>
           </li>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
         </ul>
       </div>
     </nav>
@@ -66,17 +77,6 @@
 
     <div class="main-content">
       <!-- Search -->
-      <div class="container d-flex justify-content-center mt-4">
-        <form class="d-flex w-75">
-          <input
-            class="form-control search-input me-2"
-            type="search"
-            placeholder="Cari buku..."
-          />
-          <button class="btn btn-custom" type="submit">Search</button>
-        </form>
-      </div>
-
       <!-- Judul -->
       <div class="container mt-4">
         <h4 style="color: #0d6efd; font-weight: 450">Buku Rekomendasi</h4>
@@ -253,6 +253,7 @@
             </div>
 
             <!-- Card 3 -->
+
             <div class="col-md-3 d-flex">
               <div class="card m-2 border-1 w-100 shadow-sm rounded-3">
                 <img
@@ -402,31 +403,80 @@
         </div>
       </div>
 
-      <!-- kontak sqaya -->
-      <div class="container-kontak d-flex justify-content-center">
-        <div class="card mb-3 mt-3">
-          <div class="row g-0 mt-3">
-            <div class="col-md-4 m-auto p-4">
-              <h2>Kontak <span style="color: #0d6efd">kami</span></h2>
+      <!-- promo -->
+
+      <div
+        id="promo"
+        class="container-promo mt-4 d-flex justify-content-center align-items-center"
+      >
+        <!-- Card 1 -->
+        <div
+          class="card card-promo text-bg-primary mb-3 mx-2"
+          style="max-width: 18rem; height: 250px"
+        >
+          <div class="card-body">
+            <h5 class="card-title">Beli 1 Gratis 2</h5>
+            <p style="color: white">
+              Ambil 3 buku favoritmu, cukup bayar 1 saja! Promo terbatas, buruan
+              sebelum habis!
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="card card-promo text-bg-primary mb-3 mx-2"
+          style="max-width: 18rem; height: 250px"
+        >
+          <div class="card-body">
+            <h5 class="card-title">Promo spesial</h5>
+            <p style="color: white">
+              Beli 1 buku GRATIS 2 buku lainnya. Kesempatan langka untuk kamu
+              pecinta buku!
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="card card-promo text-bg-primary mb-3 mx-2"
+          style="max-width: 18rem; height: 250px"
+        >
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p style="color: white">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- promo end -->
+
+      <!-- kontak saya -->
+      <div class="container-kontak d-flex justify-content-center mt-4">
+        <div class="card card-kontak mb-4 mt-3 border-0">
+          <div class="row g-0 mt-3 ms-5">
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <h2 style="font-size: 30px" id="kontak">
+                Kontak <span style="color: #0d6efd">kami</span>
+              </h2>
             </div>
             <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Alamat</h5>
-                <p class="card-text">
-                  JL. Mangaan V LK XIII Mabar
-                </p>
+              <div class="card-body ms-5">
+                <h5 style="color: #0d6efd">Alamat</h5>
+                <p class="card-text">JL. Mangaan V LK XIII Mabar</p>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Email</h5>
-                <p class="card-text">
-                  Habibifadli682@gmail.com
-                </p>
+              <div class="card-body ms-5">
+                <h5 style="color: #0d6efd">Email</h5>
+                <p class="card-text">Habibifadli682@gmail.com</p>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">No Handphone</h5>
-                <p class="card-text">
-                  +6282369436342
-                </p>
+              <div class="card-body ms-5">
+                <h5 style="color: #0d6efd">No Handphone</h5>
+                <p class="card-text">+6282369436342</p>
               </div>
             </div>
           </div>
