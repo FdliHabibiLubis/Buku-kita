@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Buku Kita - Lupa Password</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700;800&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#00327d",
+          "primary-container": "#0047ab",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#a5bdff",
+          "secondary-container": "#fed000",
+          "on-secondary-container": "#6f5900",
+          "background": "#f9f9f9",
+          "surface": "#f9f9f9",
+          "on-surface": "#1a1c1c",
+          "on-surface-variant": "#434653",
+          "error": "#ba1a1a",
+          "outline-variant": "#c3c6d5"
+        },
+        borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        fontFamily: {
+          "headline-lg": ["Archivo Narrow"],
+          "headline-md": ["Archivo Narrow"],
+          "body-md": ["Public Sans"],
+          "label-bold": ["Archivo Narrow"]
+        },
+        fontSize: {
+          "headline-lg": ["30px", { lineHeight: "1.1", fontWeight: "700" }],
+          "headline-md": ["18px", { lineHeight: "1.2", fontWeight: "700" }],
+          "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+          "label-bold": ["12px", { lineHeight: "1.0", fontWeight: "700" }]
+        }
+      }
+    }
+  };
+</script>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-background text-on-surface font-body-md auth-bg min-h-screen flex items-center justify-center px-4">
+
+<div class="w-full max-w-md bg-surface border-[3px] border-on-surface neobrutal-shadow p-5">
+  <h1 class="text-headline-lg font-headline-lg text-primary uppercase tracking-tighter text-center mb-1">Buku Kita</h1>
+  <p class="text-center text-label-bold font-label-bold text-on-surface-variant uppercase mb-3">Lupa Password</p>
+
+  <div class="mb-3">
+    <label class="block text-label-bold font-label-bold uppercase mb-1">Username / Email</label>
+    <input type="text" placeholder="Masukkan username/email"
+      class="w-full px-4 py-3 bg-surface border-[3px] border-on-surface focus:ring-0 focus:outline-none font-body-md" />
+  </div>
+
+  <button onclick="alert('Kode OTP telah dikirim')"
+    class="w-full bg-secondary-container text-on-secondary-container py-2.5 border-[3px] border-on-surface neobrutal-shadow-sm hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1.5px_1.5px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all uppercase font-headline-md text-label-bold mb-5">
+    Kirim OTP
+  </button>
+
+  <div class="mb-3">
+    <label class="block text-label-bold font-label-bold uppercase mb-1">Password Baru</label>
+    <input type="password" placeholder="Masukkan password"
+      class="w-full px-4 py-3 bg-surface border-[3px] border-on-surface focus:ring-0 focus:outline-none font-body-md" />
+  </div>
+
+  <div class="mb-2">
+    <label class="block text-label-bold font-label-bold uppercase mb-1">Konfirmasi Password</label>
+    <input type="password" placeholder="Masukkan ulang password"
+      class="w-full px-4 py-3 bg-surface border-[3px] border-on-surface focus:ring-0 focus:outline-none font-body-md" />
+  </div>
+
+  <button class="w-full bg-primary text-on-primary py-3 border-[3px] border-on-surface neobrutal-shadow-sm hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1.5px_1.5px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all uppercase font-headline-md text-label-bold mb-3">
+    Reset Password
+  </button>
+
+  <p class="flex justify-end">
+    <a class="text-label-bold font-label-bold underline decoration-2 underline-offset-2 hover:text-primary" href="index.html">Login</a>
+  </p>
+</div>
+
+</body>
+</html>

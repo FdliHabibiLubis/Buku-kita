@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Buku Kita - Kategori Buku</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700;800&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#00327d",
+          "primary-container": "#0047ab",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#a5bdff",
+          "secondary-container": "#fed000",
+          "on-secondary-container": "#6f5900",
+          "background": "#f9f9f9",
+          "surface": "#f9f9f9",
+          "surface-container": "#eeeeee",
+          "surface-container-lowest": "#ffffff",
+          "on-surface": "#1a1c1c",
+          "on-surface-variant": "#434653",
+          "error": "#ba1a1a",
+          "outline-variant": "#c3c6d5"
+        },
+        borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        spacing: { "gutter": "14px", "base": "6px" },
+        fontFamily: {
+          "headline-lg": ["Archivo Narrow"],
+          "headline-md": ["Archivo Narrow"],
+          "body-md": ["Public Sans"],
+          "label-bold": ["Archivo Narrow"]
+        },
+        fontSize: {
+          "headline-lg": ["26px", { lineHeight: "1.1", fontWeight: "700" }],
+          "headline-md": ["17px", { lineHeight: "1.2", fontWeight: "700" }],
+          "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+          "label-bold": ["12px", { lineHeight: "1.0", fontWeight: "700" }]
+        }
+      }
+    }
+  };
+</script>
+<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col" data-require-auth="true">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-4 py-4 bg-surface border-b-[3px] border-on-surface shadow-[5px_5px_0px_0px_#000000]">
+<span class="text-headline-md font-headline-md text-primary uppercase tracking-tighter">Buku Kita</span>
+<nav class="flex gap-6">
+<a class="text-label-bold font-label-bold text-on-surface hover:text-primary transition-colors" href="../dashboard.html">Home</a>
+<a class="text-label-bold font-label-bold text-on-surface hover:text-primary transition-colors" href="../dashboard.html#promo">Promo</a>
+<a class="text-label-bold font-label-bold text-on-surface hover:text-primary transition-colors" href="../dashboard.html#kontak">Hubungi kami</a>
+<a class="text-label-bold font-label-bold text-on-surface hover:text-primary transition-colors" onclick="logout()" href="../index.html">Keluar</a>
+</nav>
+</header>
+
+<div class="flex flex-1 overflow-hidden">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col gap-base p-base h-[calc(100vh-80px)] w-64 bg-surface-container-lowest border-r-[3px] border-on-surface shadow-[3px_0px_0px_0px_#000000] sticky top-20 overflow-y-auto">
+<div class="p-3 mb-2">
+<h2 class="text-headline-md font-headline-md text-primary">Kategori</h2>
+<p class="text-label-bold font-label-bold text-on-surface-variant opacity-70">Jelajahi Koleksi</p>
+</div>
+<nav class="flex flex-col gap-3">
+<a class="flex items-center gap-4 p-3 bg-secondary-container text-on-secondary-container shadow-[3px_3px_0px_0px_#000000] border-[1.5px] border-on-surface transition-colors" href="buku.html">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-label-bold font-label-bold uppercase">Buku</span>
+</a>
+<a class="flex items-center gap-4 p-3 text-on-surface-variant hover:bg-surface-container-high border-[1.5px] border-transparent transition-colors" href="ebook.html">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="text-label-bold font-label-bold uppercase">Ebook</span>
+</a>
+</nav>
+</aside>
+
+<main class="flex-1 overflow-y-auto px-margin-mobile md:px-4 py-gutter bg-background">
+<div class="flex justify-between items-end mb-2 border-b-[3px] border-on-surface pb-2">
+<h1 class="text-headline-lg font-headline-lg text-primary uppercase">Semua Buku</h1>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-gutter">
+<div class="bg-surface border-[3px] border-on-surface neobrutal-shadow neobrutal-shadow-hover flex flex-col h-full group">
+<div class="aspect-[3/4] overflow-hidden border-b-[3px] border-on-surface bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Sampul buku Janji oleh Tere Liye" src="../assets/images/Rekom-Buku/janji-tereliye.jpg"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-label-bold font-headline-md text-on-surface mb-1 leading-tight min-h-[2.25rem]">Janji - Tere Liye</h3>
+<p class="text-primary font-headline-md text-headline-md mb-2">Rp. 121.000,00</p>
+<a href="../Detail-buku/detail-janji.html" class="mt-auto w-full text-center py-2 border-[3px] border-primary text-primary font-label-bold uppercase neobrutal-shadow-sm hover:bg-primary hover:text-white transition-all active:translate-x-[1px] active:translate-y-[1px] active:shadow-none inline-block">Detail</a>
+</div>
+</div>
+<div class="bg-surface border-[3px] border-on-surface neobrutal-shadow neobrutal-shadow-hover flex flex-col h-full group">
+<div class="aspect-[3/4] overflow-hidden border-b-[3px] border-on-surface bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Sampul buku Tentang Kamu oleh Tere Liye" src="../assets/images/Rekom-Buku/tentang kamu-tereliye.jpg"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-label-bold font-headline-md text-on-surface mb-1 leading-tight min-h-[2.25rem]">Tentang Kamu - Tere Liye</h3>
+<p class="text-primary font-headline-md text-headline-md mb-2">Rp. 121.000,00</p>
+<a href="../Detail-buku/detail-tentang-kamu.html" class="mt-auto w-full text-center py-2 border-[3px] border-primary text-primary font-label-bold uppercase neobrutal-shadow-sm hover:bg-primary hover:text-white transition-all active:translate-x-[1px] active:translate-y-[1px] active:shadow-none inline-block">Detail</a>
+</div>
+</div>
+<div class="bg-surface border-[3px] border-on-surface neobrutal-shadow neobrutal-shadow-hover flex flex-col h-full group">
+<div class="aspect-[3/4] overflow-hidden border-b-[3px] border-on-surface bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Sampul buku Hujan oleh Tere Liye" src="../assets/images/Rekom-Buku/hujan-tereliye.jpg"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-label-bold font-headline-md text-on-surface mb-1 leading-tight min-h-[2.25rem]">Hujan - Tere Liye</h3>
+<p class="text-primary font-headline-md text-headline-md mb-2">Rp. 121.000,00</p>
+<a href="../Detail-buku/detail-hujan.html" class="mt-auto w-full text-center py-2 border-[3px] border-primary text-primary font-label-bold uppercase neobrutal-shadow-sm hover:bg-primary hover:text-white transition-all active:translate-x-[1px] active:translate-y-[1px] active:shadow-none inline-block">Detail</a>
+</div>
+</div>
+<div class="bg-surface border-[3px] border-on-surface neobrutal-shadow neobrutal-shadow-hover flex flex-col h-full group">
+<div class="aspect-[3/4] overflow-hidden border-b-[3px] border-on-surface bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Sampul buku Seporsi Mie Ayam Sebelum Mati oleh Brian Khrisna" src="../assets/images/Rekom-Buku/seporsimieayam-brian.jpg"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-label-bold font-headline-md text-on-surface mb-1 leading-tight min-h-[2.25rem]">Seporsi Mie Ayam Sebelum Mati - Brian Khrisna</h3>
+<p class="text-primary font-headline-md text-headline-md mb-2">Rp. 121.000,00</p>
+<a href="../Detail-buku/detail-seporsi-mie-ayam-sebelum-mati.html" class="mt-auto w-full text-center py-2 border-[3px] border-primary text-primary font-label-bold uppercase neobrutal-shadow-sm hover:bg-primary hover:text-white transition-all active:translate-x-[1px] active:translate-y-[1px] active:shadow-none inline-block">Detail</a>
+</div>
+</div>
+<div class="bg-surface border-[3px] border-on-surface neobrutal-shadow neobrutal-shadow-hover flex flex-col h-full group">
+<div class="aspect-[3/4] overflow-hidden border-b-[3px] border-on-surface bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Sampul buku Kau Aku dan Sepucuk Angpao Merah oleh Tere Liye" src="../assets/images/Rekom-Buku/kauakudansepucuk-tereliye.jpg"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-label-bold font-headline-md text-on-surface mb-1 leading-tight min-h-[2.25rem]">Kau Aku dan Sepucuk Angpao Merah - Tere Liye</h3>
+<p class="text-primary font-headline-md text-headline-md mb-2">Rp. 121.000,00</p>
+<a href="../Detail-buku/detail-kau-aku-dan-sepucuk-angpao-merah.html" class="mt-auto w-full text-center py-2 border-[3px] border-primary text-primary font-label-bold uppercase neobrutal-shadow-sm hover:bg-primary hover:text-white transition-all active:translate-x-[1px] active:translate-y-[1px] active:shadow-none inline-block">Detail</a>
+</div>
+</div>
+<div class="bg-surface border-[3px] border-on-surface neobrutal-shadow neobrutal-shadow-hover flex flex-col h-full group">
+<div class="aspect-[3/4] overflow-hidden border-b-[3px] border-on-surface bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Sampul buku Bumi Manusia oleh Pramoedya Ananta Toer" src="../assets/images/Rekom-Buku/bumi manusia-pram.png"/>
+</div>
+<div class="p-3 flex flex-col flex-1">
+<h3 class="text-label-bold font-headline-md text-on-surface mb-1 leading-tight min-h-[2.25rem]">Bumi Manusia - Pramoedya Ananta Toer</h3>
+<p class="text-primary font-headline-md text-headline-md mb-2">Rp. 121.000,00</p>
+<a href="../Detail-buku/detail-bumi-manusia.html" class="mt-auto w-full text-center py-2 border-[3px] border-primary text-primary font-label-bold uppercase neobrutal-shadow-sm hover:bg-primary hover:text-white transition-all active:translate-x-[1px] active:translate-y-[1px] active:shadow-none inline-block">Detail</a>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+<footer class="w-full border-t-[3px] border-on-surface bg-on-surface text-surface py-6 px-margin-mobile md:px-4 text-center">
+<p class="text-body-md font-body-md opacity-70">&copy; 2026 Buku Kita. Made by Fadli Habibi.</p>
+</footer>
+
+<script src="../assets/javascript/script.js"></script>
+</body>
+</html>
